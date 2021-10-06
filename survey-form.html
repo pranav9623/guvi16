@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="survey-form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Survey-Form</title>
+  </head>
+  <body>
+    <div class="first">
+      <p><strong>Name</strong><span style="color: red">*</span></p>
+      <div class="input-group">
+        <input
+          type="text"
+          aria-label="First name"
+          class="form-control"
+          required
+          placeholder="First Name"
+        />
+
+        <input
+          type="text"
+          aria-label="Last name"
+          class="form-control"
+          required
+          placeholder="Last Name"
+        />
+        <br />
+      </div>
+      <br />
+      <div class="input-mail">
+        <p><strong>Email</strong> <span style="color: red">*</span></p>
+
+        <input type="text" aria-label="Email" class="mail" required />
+      </div>
+      <br />
+      <div class="field">
+        <p>
+          <strong> Your Experience</strong> <span style="color: red">*</span>
+        </p>
+      </div>
+      <fieldset class="rating">
+        <input type="radio" id="star5" name="rating" value="5" required /><label
+          for="star5"
+          title="Rocks!"
+          >5 stars</label
+        >
+        <input type="radio" id="star4" name="rating" value="4" required /><label
+          for="star4"
+          title="Pretty good"
+          >4 stars</label
+        >
+        <input type="radio" id="star3" name="rating" value="3" required /><label
+          for="star3"
+          title="Meh"
+          >3 stars</label
+        >
+        <input type="radio" id="star2" name="rating" value="2" required /><label
+          for="star2"
+          title="Kinda bad"
+          >2 stars</label
+        >
+        <input type="radio" id="star1" name="rating" value="1" required /><label
+          for="star1"
+          title="Sucks big time"
+          >1 star</label
+        >
+      </fieldset>
+      <br />
+      <br />
+      <p>Overall, how would you rate your experience with us?</p>
+      <br />
+      <p>
+        <strong
+          >How satisfied are you with <span style="color: red">*</span></strong
+        >
+      </p>
+      <br />
+      <table class="a1">
+        <tr>
+          <th></th>
+          <th>Very unsatisfied</th>
+          <th>Unsatisfied</th>
+          <th>Neutal</th>
+          <th>Satisfied</th>
+          <th>Very Satisfied</th>
+        </tr>
+        <tr>
+          <td>Purchase</td>
+          <td><input type="radio" name="r1" class="rad" /></td>
+          <td><input type="radio" name="r1" class="rad" /></td>
+          <td><input type="radio" name="r1" class="rad" /></td>
+          <td><input type="radio" name="r1" class="rad" /></td>
+          <td><input type="radio" name="r1" class="rad" /></td>
+        </tr>
+        <tr>
+          <td>Service</td>
+          <td><input type="radio" name="r2" class="rad" /></td>
+          <td><input type="radio" name="r2" class="rad" /></td>
+          <td><input type="radio" name="r2" class="rad" /></td>
+          <td><input type="radio" name="r2" class="rad" /></td>
+          <td><input type="radio" name="r2" class="rad" /></td>
+        </tr>
+        <tr>
+          <td>Company overall</td>
+          <td><input type="radio" name="r3" class="rad" /></td>
+          <td><input type="radio" name="r3" class="rad" /></td>
+          <td><input type="radio" name="r3" class="rad" /></td>
+          <td><input type="radio" name="r3" class="rad" /></td>
+          <td><input type="radio" name="r3" class="rad" /></td>
+        </tr>
+        <tr class="blank_row">
+          <td bgcolor="#FFFFFF" colspan="12">&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="12">
+            <strong
+              >How likely are you to <span style="color: red">*</span></strong
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <th></th>
+          <th>Very unlikely</th>
+          <th>Unlikely</th>
+          <th>Neutal</th>
+          <th>Likely</th>
+          <th>Very Likely</th>
+        </tr>
+        <tr>
+          <td>Buy from us again</td>
+          <td><input type="radio" name="r4" class="rad" /></td>
+          <td><input type="radio" name="r4" class="rad" /></td>
+          <td><input type="radio" name="r4" class="rad" /></td>
+          <td><input type="radio" name="r4" class="rad" /></td>
+          <td><input type="radio" name="r4" class="rad" /></td>
+        </tr>
+        <tr>
+          <td>Recomend our product to other</td>
+          <td><input type="radio" name="r5" class="rad" /></td>
+          <td><input type="radio" name="r5" class="rad" /></td>
+          <td><input type="radio" name="r5" class="rad" /></td>
+          <td><input type="radio" name="r5" class="rad" /></td>
+          <td><input type="radio" name="r5" class="rad" /></td>
+        </tr>
+        <tr>
+          <td>Recomend our company to others</td>
+          <td><input type="radio" name="r6" class="rad" /></td>
+          <td><input type="radio" name="r6" class="rad" /></td>
+          <td><input type="radio" name="r6" class="rad" /></td>
+          <td><input type="radio" name="r6" class="rad" /></td>
+          <td><input type="radio" name="r6" class="rad" /></td>
+        </tr>
+      </table>
+      <br />
+      <br />
+      <div class="texta">
+        <p><strong>Additional comments or suggestions</strong></p>
+
+        <textarea></textarea>
+        <br />
+        <button type="button" class="btn btn-outline-secondary">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
